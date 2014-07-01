@@ -1,0 +1,2 @@
+<meta name="ucl.advances.audience" tal:attributes="content view/get_news_audiences" />
+<meta name="ucl.advances.subjects" tal:attributes="content view/get_news_subjects" />

@@ -1,0 +1,26 @@
+<meta tal:replace="structure context/@@contenttype" />
+<!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <![endif]-->
+<meta tal:condition="context/is_published" name="robots" content="index,follow">
+<meta tal:condition="not:context/is_published" name="robots" content="noindex">
+<meta name="subject"
+        tal:define="subject python: here.get_metadata_element('silva-extra', 'subject') or nothing"
+        tal:condition="subject"
+        tal:attributes="content subject" />
+<meta name="description"
+        tal:define="description python: here.get_metadata_element('silva-extra', 'content_description') or nothing"
+        tal:condition="description"
+        tal:attributes="content description" />
+<meta name="keywords"
+        tal:define="keywords python: here.get_metadata_element('silva-extra', 'keywords') or nothing"
+        tal:condition="keywords"
+        tal:attributes="content keywords" />
+<meta name="contact.name"
+        tal:define="name python: here.get_metadata_element('silva-extra', 'contactname') or nothing"
+        tal:condition="name" tal:attributes="content name" />
+<meta name="contact.email"
+        tal:define="email python: here.get_metadata_element('silva-extra', 'contactemail') or nothing"
+        tal:condition="email" tal:attributes="content email" />
+<!--<tal:metaset define="hasset python:view.hasMetaDataSet('fb-insights')" tal:condition="hasset">
+<meta property="fb:admins" tal:define="code python: here.get_metadata_element('fb-insights', 'fbcode') or nothing" tal:condition="code" tal:attributes="content code" />
+</tal:metaset>-->
+<tal:silvanews define="isnews view/isnewsitem" tal:condition="isnews" tal:content="structure context/@@ucl_news_meta" />

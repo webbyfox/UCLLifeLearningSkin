@@ -1,0 +1,12 @@
+<tal:footer define="resourcebase request/resourcebase/absolute_url;">
+    <p id="copyright">Copyright &copy; <span tal:replace="view/copyrightyear" /> UCL </p>
+    <p id="links">
+    <a href="http://www.ucl.ac.uk/disclaimer">Disclaimer</a>
+    <a href="http://www.ucl.ac.uk/foi">Freedom of Information</a>
+    <a href="http://www.ucl.ac.uk/accessibility">Accessibility</a>
+    <a href="http://www.ucl.ac.uk/privacy">Privacy</a>
+    <a href="http://www.ucl.ac.uk/cookies">Cookies</a>
+    <a href="http://www.ucl.ac.uk/contact-list">Contact UCL</a>
+    <a tal:attributes="href string:${context/absolute_url}/edit"><img height="10" width="10" alt="Edit Icon" title="Edit Content" tal:attributes="src string:${resourcebase}/++resource++img/edit.gif" id="edit_button"></a>
+	</p>
+</tal:footer>

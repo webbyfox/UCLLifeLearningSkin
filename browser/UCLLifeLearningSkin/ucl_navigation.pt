@@ -1,0 +1,21 @@
+<nav
+        tal:define="myroot view/getPublicationRoot;
+                    curl context/absolute_url;
+                    rooturl myroot/absolute_url">
+    <tal:outer condition="myroot">
+        <a href="#"
+                tal:attributes="href rooturl;
+                                class python:curl == rooturl and 'navitem selectednav' or 'navitem'">Home</a>
+        <tal:subitems define="items python:myroot.get_public_tree(0);">
+            <tal:block repeat="itemtuple items">
+                <a href="#"
+                        tal:define="item python:itemtuple[1];
+                                    iurl item/absolute_url;
+                                    classnames python:curl.find(iurl) > -1 and 'navitem selectednav' or 'navitem'"
+                        tal:attributes="href iurl;
+                                        class classnames"
+                        tal:content="item/get_title">Nav items</a>
+            </tal:block>
+        </tal:subitems>
+    </tal:outer>
+</nav>

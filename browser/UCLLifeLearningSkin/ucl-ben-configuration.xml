@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<metadata_set id="ucl-ben-configuration" ns_uri="www.ucl.ac.uk/ucl-ben-configuration" ns_prefix="ucl-ben-configuration">
+<title>UCL Petrie Theme Configuration</title>
+<category></category>
+<description>A number of settings for the UCL Petrie Theme configuration</description>
+<i18n_domain></i18n_domain>
+<minimalrole></minimalrole>
+  <metadata_element id="breadcrumbs">
+   <index_type>TextIndex</index_type>
+   <index_p>0</index_p>
+   <field_type>RadioField</field_type>
+   <acquire_p>1</acquire_p>
+   <read_only_p>0</read_only_p>
+   <read_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </read_guard>
+   <write_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </write_guard>
+   <field_values>
+        <value key="description" type="str" value="Show a breadcrumb trail above the main content." />
+        <value key="unicode" type="int" value="1" />
+        <value key="items" type="list" value="[('On', 'True'), ('Off', 'False')]" />
+        <value key="extra_item" type="str" value="" />
+        <value key="orientation" type="str" value="horizontal" />
+        <value key="first_item" type="int" value="0" />
+        <value key="title" type="str" value="Show Breadcrumbs" />
+        <value key="default" type="str" value="" />
+        <value key="css_class" type="str" value="" />
+        <value key="required" type="int" value="0" />
+        <value key="enabled" type="int" value="1" />
+        <value key="external_validator" type="str" value="" />
+        <value key="alternate_name" type="str" value="" />
+        <value key="whitespace_preserve" type="int" value="0" />
+        <value key="hidden" type="int" value="0" />
+   </field_values>
+   <field_tales>
+     <value key="description"></value>
+     <value key="first_item"></value>
+     <value key="title"></value>
+     <value key="default"></value>
+     <value key="css_class"></value>
+     <value key="required"></value>
+     <value key="enabled"></value>
+     <value key="whitespace_preserve"></value>
+     <value key="external_validator"></value>
+     <value key="extra_item"></value>
+     <value key="unicode"></value>
+     <value key="items"></value>
+     <value key="hidden"></value>
+     <value key="alternate_name"></value>
+     <value key="orientation"></value>
+   </field_tales>
+   <field_messages>
+     <message name="external_validator_failed">The input failed the external validator.</message>
+     <message name="required_not_found">Input is required but no input given.</message>
+     <message name="unknown_selection">You selected an item that was not in the list.</message>
+   </field_messages>
+   <index_args>
+   </index_args>
+  </metadata_element>
+  <metadata_element id="dynamicfoot">
+   <index_type>TextIndex</index_type>
+   <index_p>0</index_p>
+   <field_type>RadioField</field_type>
+   <acquire_p>1</acquire_p>
+   <read_only_p>0</read_only_p>
+   <read_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </read_guard>
+   <write_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </write_guard>
+   <field_values>
+        <value key="description" type="str" value="Auto generate the footer navigation element." />
+        <value key="unicode" type="int" value="1" />
+        <value key="items" type="list" value="[('On', 'True'), ('Off', 'False')]" />
+        <value key="extra_item" type="str" value="" />
+        <value key="orientation" type="str" value="horizontal" />
+        <value key="first_item" type="int" value="0" />
+        <value key="title" type="str" value="Auto Generate Footer Navigation" />
+        <value key="default" type="str" value="" />
+        <value key="css_class" type="str" value="" />
+        <value key="required" type="int" value="0" />
+        <value key="enabled" type="int" value="1" />
+        <value key="external_validator" type="str" value="" />
+        <value key="alternate_name" type="str" value="" />
+        <value key="whitespace_preserve" type="int" value="0" />
+        <value key="hidden" type="int" value="0" />
+   </field_values>
+   <field_tales>
+     <value key="description"></value>
+     <value key="first_item"></value>
+     <value key="title"></value>
+     <value key="default"></value>
+     <value key="css_class"></value>
+     <value key="required"></value>
+     <value key="enabled"></value>
+     <value key="whitespace_preserve"></value>
+     <value key="external_validator"></value>
+     <value key="extra_item"></value>
+     <value key="unicode"></value>
+     <value key="items"></value>
+     <value key="hidden"></value>
+     <value key="alternate_name"></value>
+     <value key="orientation"></value>
+   </field_tales>
+   <field_messages>
+     <message name="external_validator_failed">The input failed the external validator.</message>
+     <message name="required_not_found">Input is required but no input given.</message>
+     <message name="unknown_selection">You selected an item that was not in the list.</message>
+   </field_messages>
+   <index_args>
+   </index_args>
+  </metadata_element>
+  <metadata_element id="topnav">
+   <index_type>TextIndex</index_type>
+   <index_p>0</index_p>
+   <field_type>RadioField</field_type>
+   <acquire_p>1</acquire_p>
+   <read_only_p>0</read_only_p>
+   <read_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </read_guard>
+   <write_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </write_guard>
+   <field_values>
+        <value key="description" type="str" value="Display a horizontal top navigation. This will be automatically generated from a Silva Document with the id 'top_nav'." />
+        <value key="unicode" type="int" value="1" />
+        <value key="items" type="list" value="[('On', 'True'), ('Off', 'False')]" />
+        <value key="extra_item" type="str" value="" />
+        <value key="orientation" type="str" value="horizontal" />
+        <value key="first_item" type="int" value="0" />
+        <value key="title" type="str" value="Show Horizontal Top Navigation" />
+        <value key="default" type="str" value="" />
+        <value key="css_class" type="str" value="" />
+        <value key="required" type="int" value="0" />
+        <value key="enabled" type="int" value="1" />
+        <value key="external_validator" type="str" value="" />
+        <value key="alternate_name" type="str" value="" />
+        <value key="whitespace_preserve" type="int" value="0" />
+        <value key="hidden" type="int" value="0" />
+   </field_values>
+   <field_tales>
+     <value key="description"></value>
+     <value key="first_item"></value>
+     <value key="title"></value>
+     <value key="default"></value>
+     <value key="css_class"></value>
+     <value key="required"></value>
+     <value key="enabled"></value>
+     <value key="whitespace_preserve"></value>
+     <value key="external_validator"></value>
+     <value key="extra_item"></value>
+     <value key="unicode"></value>
+     <value key="items"></value>
+     <value key="hidden"></value>
+     <value key="alternate_name"></value>
+     <value key="orientation"></value>
+   </field_tales>
+   <field_messages>
+     <message name="external_validator_failed">The input failed the external validator.</message>
+     <message name="required_not_found">Input is required but no input given.</message>
+     <message name="unknown_selection">You selected an item that was not in the list.</message>
+   </field_messages>
+   <index_args>
+   </index_args>
+  </metadata_element>
+  <metadata_element id="heromast">
+   <index_type>TextIndex</index_type>
+   <index_p>0</index_p>
+   <field_type>LookupWindowField</field_type>
+   <acquire_p>1</acquire_p>
+   <read_only_p>0</read_only_p>
+   <read_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </read_guard>
+   <write_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </write_guard>
+   <field_values>
+        <value key="extra" type="str" value="" />
+        <value key="description" type="str" value="Browse for an image to appear above the main content." />
+        <value key="truncate" type="int" value="0" />
+        <value key="title" type="str" value="Masthead Background Image" />
+        <value key="default" type="str" value="" />
+        <value key="css_class" type="str" value="" />
+        <value key="required" type="int" value="0" />
+        <value key="enabled" type="int" value="1" />
+        <value key="display_maxwidth" type="str" value="" />
+        <value key="external_validator" type="str" value="" />
+        <value key="onclick" type="str" value="reference.getReference( function(path, id, title) { document.getElementsByName('%(field_id)s')[0].value = path;; }, '%(url)s', 'Responsive Image', true, '%(selected_path)s')" />
+        <value key="max_length" type="str" value="" />
+        <value key="unicode" type="int" value="1" />
+        <value key="whitespace_preserve" type="int" value="0" />
+        <value key="hidden" type="int" value="0" />
+        <value key="display_width" type="int" value="20" />
+        <value key="alternate_name" type="str" value="" />
+   </field_values>
+   <field_tales>
+     <value key="extra"></value>
+     <value key="description"></value>
+     <value key="truncate"></value>
+     <value key="title"></value>
+     <value key="default"></value>
+     <value key="css_class"></value>
+     <value key="required"></value>
+     <value key="enabled"></value>
+     <value key="display_maxwidth"></value>
+     <value key="external_validator"></value>
+     <value key="onclick"></value>
+     <value key="max_length"></value>
+     <value key="unicode"></value>
+     <value key="whitespace_preserve"></value>
+     <value key="hidden"></value>
+     <value key="display_width"></value>
+     <value key="alternate_name"></value>
+   </field_tales>
+   <field_messages>
+     <message name="external_validator_failed">The input failed the external validator.</message>
+     <message name="required_not_found">Input is required but no input given.</message>
+     <message name="too_long">Too much input was given.</message>
+   </field_messages>
+   <index_args>
+   </index_args>
+  </metadata_element>
+  <metadata_element id="mastlogo">
+   <index_type>TextIndex</index_type>
+   <index_p>0</index_p>
+   <field_type>LookupWindowField</field_type>
+   <acquire_p>1</acquire_p>
+   <read_only_p>0</read_only_p>
+   <read_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </read_guard>
+   <write_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </write_guard>
+   <field_values>
+        <value key="extra" type="str" value="" />
+        <value key="description" type="str" value="Browse for an image for the masthead logo." />
+        <value key="truncate" type="int" value="0" />
+        <value key="title" type="str" value="Masthead Logo" />
+        <value key="default" type="str" value="" />
+        <value key="css_class" type="str" value="" />
+        <value key="required" type="int" value="0" />
+        <value key="enabled" type="int" value="1" />
+        <value key="display_maxwidth" type="str" value="" />
+        <value key="external_validator" type="str" value="" />
+        <value key="onclick" type="str" value="reference.getReference( function(path, id, title) { document.getElementsByName('%(field_id)s')[0].value = path;; }, '%(url)s', 'Silva Image', true, '%(selected_path)s')" />
+        <value key="max_length" type="str" value="" />
+        <value key="unicode" type="int" value="1" />
+        <value key="whitespace_preserve" type="int" value="0" />
+        <value key="hidden" type="int" value="0" />
+        <value key="display_width" type="int" value="20" />
+        <value key="alternate_name" type="str" value="" />
+   </field_values>
+   <field_tales>
+     <value key="extra"></value>
+     <value key="description"></value>
+     <value key="truncate"></value>
+     <value key="title"></value>
+     <value key="default"></value>
+     <value key="css_class"></value>
+     <value key="required"></value>
+     <value key="enabled"></value>
+     <value key="display_maxwidth"></value>
+     <value key="external_validator"></value>
+     <value key="onclick"></value>
+     <value key="max_length"></value>
+     <value key="unicode"></value>
+     <value key="whitespace_preserve"></value>
+     <value key="hidden"></value>
+     <value key="display_width"></value>
+     <value key="alternate_name"></value>
+   </field_tales>
+   <field_messages>
+     <message name="external_validator_failed">The input failed the external validator.</message>
+     <message name="required_not_found">Input is required but no input given.</message>
+     <message name="too_long">Too much input was given.</message>
+   </field_messages>
+   <index_args>
+   </index_args>
+  </metadata_element>
+  <metadata_element id="masttext">
+   <index_type>ZCTextIndex</index_type>
+   <index_p>0</index_p>
+   <field_type>RadioField</field_type>
+   <acquire_p>1</acquire_p>
+   <read_only_p>0</read_only_p>
+   <read_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </read_guard>
+   <write_guard>
+     <roles></roles>
+     <permissions></permissions>
+     <expr></expr>
+   </write_guard>
+   <field_values>
+        <value key="description" type="str" value="Display a text overlay on the masthead image. This will be automatically generated from a Silva Document with the id 'overlay'" />
+        <value key="unicode" type="int" value="1" />
+        <value key="items" type="list" value="[('On', 'True'), ('Off', 'False')]" />
+        <value key="extra_item" type="str" value="" />
+        <value key="orientation" type="str" value="horizontal" />
+        <value key="first_item" type="int" value="0" />
+        <value key="title" type="str" value="Show Masthead Text" />
+        <value key="default" type="str" value="" />
+        <value key="css_class" type="str" value="" />
+        <value key="required" type="int" value="0" />
+        <value key="enabled" type="int" value="1" />
+        <value key="external_validator" type="str" value="" />
+        <value key="alternate_name" type="str" value="" />
+        <value key="whitespace_preserve" type="int" value="0" />
+        <value key="hidden" type="int" value="0" />
+   </field_values>
+   <field_tales>
+     <value key="description"></value>
+     <value key="first_item"></value>
+     <value key="title"></value>
+     <value key="default"></value>
+     <value key="css_class"></value>
+     <value key="required"></value>
+     <value key="enabled"></value>
+     <value key="whitespace_preserve"></value>
+     <value key="external_validator"></value>
+     <value key="extra_item"></value>
+     <value key="unicode"></value>
+     <value key="items"></value>
+     <value key="hidden"></value>
+     <value key="alternate_name"></value>
+     <value key="orientation"></value>
+   </field_tales>
+   <field_messages>
+     <message name="external_validator_failed">The input failed the external validator.</message>
+     <message name="required_not_found">Input is required but no input given.</message>
+     <message name="unknown_selection">You selected an item that was not in the list.</message>
+   </field_messages>
+   <index_args>
+   </index_args>
+  </metadata_element>
+</metadata_set>

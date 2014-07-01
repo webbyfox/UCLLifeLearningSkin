@@ -1,0 +1,50 @@
+<!doctype html>
+<!--[if IE 7]> <html lang="en" dir="ltr" class="lt-ie9 lt-ie8 no-js" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Organization"> <![endif]-->
+<!--[if IE 8]> <html lang="en" dir="ltr" class="lt-ie9 no-js" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Organization"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" dir="ltr" class="no-js" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Organization"> <!--<![endif]-->
+<head tal:define="global resourcebase request/resourcebase/absolute_url;
+                  global ucl_content_area context/@@ucl_content;
+                  head_content python:'\n'.join(request.other.setdefault('head', []));
+                  global foot_js_script python:'\n'.join(request.other.setdefault('script_foot', []));
+                  setskin view/setSkin;">
+  <link rel="canonical" tal:attributes="href view/canonical_path" />
+  <tal:block content="structure context/@@ucl_meta" />
+  <title tal:content="context/get_title_or_id">Title</title>
+  <!--<tal:comment replace="nothing">
+  <link rel="stylesheet" href="http://static.ucl.ac.uk/petrie/css/petrie.css">
+  <link rel="stylesheet" href="//www.ucl.ac.uk/3dpetriemuseum/3dobjects/models/css/petrie.css"
+        tal:attributes="href string:${resourcebase}/++resource++css/petrie.css">
+  </tal:comment>-->
+  <link rel="stylesheet" href="//www.ucl.ac.uk/3dpetriemuseum/3dobjects/models/css/petrie.css">
+  <link rel="shortcut icon" tal:attributes="href string:${resourcebase}/++resource++img/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" tal:attributes="href string:${resourcebase}/++resource++img/apple-touch-icon-precomposed.png">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileImage" tal:attributes="content string:${resourcebase}/++resource++img/ucladvances-144.png">
+  <!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!-- Head injector Script -->
+  <tal:analytics content="structure context/@@ucl_analytics" />
+</head>
+<body id="index">
+
+  <div id="container">
+      <div id="site-content">
+    
+        <tal:header replace="structure context/@@ucl_header" />
+    
+        <div id="content" class="master-background wrapper clearfix">
+          <section id="main" role="main" class="dl-all">
+            <tal:content content="structure ucl_content_area"/>
+          </section>
+        </div>
+      </div>
+    
+      <footer>
+          <tal:footer content="structure context/@@ucl_footer" />
+          <tal:social content="structure context/@@ucl_social" />
+      </footer>
+    </div>
+</body>
+</html>
+

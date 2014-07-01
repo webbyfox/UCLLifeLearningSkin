@@ -1,0 +1,438 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<tal:block tal:define="error_type options/error_type | nothing;
+                    error_value options/error_value | nothing;
+                    message_type options/message_type | nothing;
+                    message options/message | nothing;
+                    allow_authentication_requests here/service_members/allow_authentication_requests | nothing;
+                    mangle python:modules['Products'].Silva.mangle;">
+<head>
+<base href="http://www.bartlett.ucl.ac.uk/">
+
+  <!--meta charset="utf-8" /-->
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="canonical" href="http://www.bartlett.ucl.ac.uk">
+  <title>The Bartlett</title>
+
+  <meta name="generator" content="Silva">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="subject" content="Welcome to The Bartlett, UCL's world-leading faculty for multidisciplinary education and research for the built environment.">
+<meta name="description" content="We are The Bartlett: UCL's global faculty of the built environment. Our sections span the entire area of study and research. Individually, they lead their fields. In partnership, they develop new responses to pressing world issues. As a whole, they represent a world-leading, multidisciplinary faculty, united by the radical spirit of UCL.">
+<meta name="keywords" content="Bartlett UCL education research built environment London programmes courses architecture architectural design history theory planning construction project management development advanced spatial analysis programs undergraduate masters doctoral BA BSc MA MArch MSc MRes MPhil PhD">
+<meta name="contact.name" content="Web Services">
+<meta name="contact.email" content="web-support@ucl.ac.uk">
+
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="http://www.bartlett.ucl.ac.uk/++resource++img/favicon.ico">
+  
+
+  <!-- CSS: implied media="all" -->
+  
+  <link rel="stylesheet" href="http://www.bartlett.ucl.ac.uk/++resource++css/style.css">
+
+  <!-- Branding Variation Style Sheet -->
+  
+
+  <!-- Silva Style Sheets -->
+  
+
+  <!-- Head injector Script at top -->
+  <link rel="stylesheet" type="text/css" href="http://www.bartlett.ucl.ac.uk/++resource++css/prettyPhoto.css" media="screen">
+
+  <!-- All JavaScript at the bottom, except for Modernizr and Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="http://www.bartlett.ucl.ac.uk/++resource++jslibs/modernizr-2.0.min.js"></script>
+  <script src="http://www.bartlett.ucl.ac.uk/++resource++jslibs/respond.min.js"></script>
+
+</head>
+<body>
+    <div id="sticky">
+
+        <div class="stiky_container">
+            <div class="stiky_shortcuts">
+                <p class="stiky_title">Please choose</p><p><a href="http://www.bartlett.ucl.ac.uk/shortcuts/please-choose/prospective-students">Prospective students</a></p><p><a href="http://www.bartlett.ucl.ac.uk/shortcuts/please-choose/international-students">International students</a></p><p><a href="http://www.bartlett.ucl.ac.uk/shortcuts/please-choose/research-partners">Research partners</a></p><p><a href="http://www.bartlett.ucl.ac.uk/shortcuts/please-choose/Knowledge_exchange_partners">Knowledge exchange partners</a></p><p><a href="http://www.bartlett.ucl.ac.uk/shortcuts/please-choose/alumni">Alumni</a></p><p><a href="http://www.bartlett.ucl.ac.uk/shortcuts/please-choose/media">Media</a></p><p><a href="http://www.bartlett.ucl.ac.uk/shortcuts/please-choose/Bartlett_staff">Bartlett staff</a></p><p><a href="http://www.bartlett.ucl.ac.uk/shortcuts/please-choose/bartlett-students">Bartlett students</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container_16">
+
+    <header class="grid_16 header_bg">
+        <section class="grid_12 alpha">
+            <div class="header_school_title">
+                <b><a href="http://www.bartlett.ucl.ac.uk">The Bartlett</a> </b>
+            </div>
+        </section>
+        <a href="http://www.ucl.ac.uk" class="grid_4 omega ucl-home-link" title="UCL Home" target="_blank">UCL Home</a>
+        <div class="clearfix"></div>
+    </header>
+
+    <section class="grid_16 subheader">
+        <section class="grid_12 alpha">
+            <nav id="primary-navigation-menu"><ul><li class="grid_2 alpha programmes"><a href="http://www.bartlett.ucl.ac.uk/programmes" class="programmes-link">Programmes</a></li><li class="grid_2 research"><a href="http://www.bartlett.ucl.ac.uk/research" class="research-link">Research</a></li><li class="grid_2 partnerships"><a href="http://www.bartlett.ucl.ac.uk/partnerships" class="partnerships-link">Partnerships</a></li><li class="grid_2 people"><a href="http://www.bartlett.ucl.ac.uk/people" class="people-link">People</a></li><li class="grid_2 latest"><a href="http://www.bartlett.ucl.ac.uk/latest" class="latest-link">Latest</a></li><li class="grid_2 omega about-us"><a href="http://www.bartlett.ucl.ac.uk/about-us" class="about-us-link">About us</a></li><div class="clearfix"></div></ul></nav>
+            <div class="clearfix"></div>
+            <section class="header_welcome_text grid_12 alpha omega">
+                <div id="text_title_zone" class="grid_10 alpha">
+                    <p>Page locator support</p>
+                    
+                    
+                </div>
+                <div class="clearfix"></div>
+            </section>
+            <section class="header_search_form grid_12 alpha omega">
+                <div class="grid_4 fr omega">
+                    <form id="search" action="http://www.bartlett.ucl.ac.uk/search/search.cgi" method="get">
+                        <input type="search" id="funnelback-search" name="query" placeholder="Search" class="grid_3 alpha omega funnelback_search_input">
+                        <input type="hidden" value="ucl-bartlett" name="collection">
+                        
+                        <input type="submit" class="grid_1 alpha omega funnelback_search_submit">
+                    </form>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+        </section>
+        <nav id="schools-navigation-menu" class="grid_4 omega"><ul><li class="bartlett current"><a href="http://www.bartlett.ucl.ac.uk" class="bartlett-link">The Bartlett</a></li><li class="first casa"><a href="http://www.bartlett.ucl.ac.uk/casa" class="casa-link">Centre for Advanced Spatial Analysis</a></li><li class="architecture"><a href="http://www.bartlett.ucl.ac.uk/architecture" class="architecture-link">School of Architecture</a></li><li class="cpm"><a href="http://www.bartlett.ucl.ac.uk/cpm" class="cpm-link">School of Construction &amp; Project Mgt</a></li><li class="dpu"><a href="http://www.bartlett.ucl.ac.uk/dpu" class="dpu-link">Development Planning Unit</a></li><li class="energy"><a href="http://www.bartlett.ucl.ac.uk/energy" class="energy-link">UCL Energy Institute</a></li><li class="graduate"><a href="http://www.bartlett.ucl.ac.uk/graduate" class="graduate-link">School of Graduate Studies</a></li><li class="planning"><a href="http://www.bartlett.ucl.ac.uk/planning" class="planning-link">School of Planning</a></li><li class="sustainable"><a href="http://www.bartlett.ucl.ac.uk/sustainable" class="sustainable-link">UCL Inst. for Sustainable Resources</a></li></ul></nav>
+    </section>
+
+        
+        
+            <div class="ucl" id="bartlett_layout_2">  <!-- Desktop Layout 2 -->
+      <section class="grid_12" id="main-content">
+          <!-- start main slot where silva content gets rendered--> 
+
+ <tal:block condition="python: error_type != 'NotFound'">
+                                        <tal:block condition="message_type">
+                                          <div class="feedback"
+                                            tal:condition="python:message_type == 'feedback'">
+                                            <span tal:replace="structure message" />&nbsp;&nbsp;(<span tal:replace="python:mangle.Now().toStr()">datetime</span>)
+                                          </div>
+                                          <div class="alert" tal:condition="python:message_type == 'error'">
+                                            <span class="error" tal:content="structure message" />
+                                          </div>
+                                        </tal:block>
+                                       <tal:block condition="python: error_type == 'Unauthorized' or error_type=='UnauthorizedGhost'">
+
+                                         <!-- unauthorized, allow registration -->
+                                         <div class="public" tal:condition="allow_authentication_requests">
+                                          <h2 class="heading">Membership system</h2>
+                                          <p class="readable">
+                                            Sorry, this page is only available to visitors with proper credentials.
+                                            <br /><br />
+                                          </p>
+                                          <div class="readable"
+                                            tal:condition="here/service_members/get_authentication_requests_url">
+                                            <p class="p">
+                                              You're welcome to apply for membership (it's a three field form). Your request will be sent to the responsible person who will grant (or possibly deny) access. Then you'll be informed via email.
+                                            </p>
+                                            <span class="subhead">
+                                              <a href="become_visitor"
+                                                tal:attributes="href string:service_resources/${here/service_members/get_authentication_requests_url}?last_url=${here/absolute_url}">
+                                              Become a visitor to the site
+                                              </a><br /></span>
+                                              As a visitor, you can view certain items that anonymous users are not allowed to see.
+                                          </div>
+                                          <br /><br />
+                                          <h4 class="heading">Visitor options</h4>
+                                          <span class="subhead"><a tal:attributes="href string:${here/REQUEST/model/absolute_url}/public/request_roles?last_url=${here/absolute_url}">Request a role which allows access to this location</a>
+                                          <br /></span>
+                                          Note that you must first have visitor rights to apply for roles.
+                                          <br /><br />
+                                          <span class="subhead">
+                                            <a tal:attributes="href request/URL0">Try logging in again....</a><br /><br />
+                                          </span>
+                                         </div>
+
+                                         <!-- unauthorized, don't allow registration -->
+                                         <div class="info" tal:condition="not:allow_authentication_requests">
+                                          <div class="public">
+                                           <h2 class="heading">Login is required to access this page</h2>
+                                           <p class="p">
+                                            Sorry, this page is only available to visitors with proper credentials.
+                                            <br /><br />
+                                           </p>
+                                            <h4 class="heading">
+                                              Most likely causes:
+                                            </h4>
+                                              <ul>
+                                                  <li>There might be a typing error in either your username or password. Remember they are case sensitive.</li>
+                                                  <li>Your password might have expired.</li>
+                                                  <li>Perhaps you dont have permission to view this page.</li>
+                                              </ul>
+                                            <h4 class="heading">
+                                              What you can try:
+                                            </h4>
+                                              <ul>
+                                                  <li><a tal:attributes="href request/URL0" title="Log in">Try logging in again....</a></li>
+                                                  <li>Go to the <a href="http://www.ucl.ac.uk/isd/" title="ISD Website"><acronym title="Information Services Division">ISD</acronym> Website</a> to find out about password management.</li>
+                                                  <li>Contact the website Chief Editor to request permission.</li>
+                                                  <li><a href="javascript:history.back()" title="Back to previous page">Go back to the previous page.</a></li>
+                                              </ul>
+                                            <h4 class="heading">
+                                              More information:
+                                            </h4>
+                                            <p class="p">
+                                                This error means that you have connected to the UCL Website, but you dont have permission to access the the page you wanted. 
+                                            </p>
+                                          </div>
+                                         </div>
+                                        </tal:block>
+                                      <tal:condition condition="python: error_type != 'Unauthorized' or error_type!='UnauthorizedGhost'">
+                                          <div class="info">
+                                            <div class="public">
+                                              <h2 class="heading">System problem</h2>
+                                              <p class="p">
+                                                Something went wrong. Please use your back button to return to the previous page.
+                                                Sorry for the irritation.
+                                                <br /><br />
+                                              </p>
+                                              <h4 class="heading">Error Type: <span class="error" tal:content="structure error_type|string:unknown">error_type</span></h4>
+                                              <h4 class="heading">Error Value: <span class="error" tal:content="structure error_value|string:unknown"></span></h4>
+                                              <h4 class="heading">Error info:</h4>
+                                              <ul>
+                                                  <li>Path: <span tal:replace="request/PATH_INFO|string:unknown">error</span></li>
+                                                  <li>URL: <span tal:replace="request/SERVER_URL|string:unknown" /><span tal:replace="request/PATH_INFO|string:unknown" /><span tal:replace="request/QUERY_STRING|string:unknown" /></li>
+                                              </ul>
+                                              <h4 class="heading">Client</h4>
+                                              <ul>
+                                                  <li>Browser: <span tal:content="request/HTTP_USER_AGENT|string:unknown">error</span></li>
+                                                  <li>Remote address: <span tal:content="request/REMOTE_ADDR|string:unknown">error</span></li>
+                                                  <li tal:condition="request/REMOTE_IDENT">Remote identity: <span tal:content="request/REMOTE_IDENT|string:unknown">error</span></li>
+                                              </ul>
+                                              <h4 tal:condition="request/HTTP_REFERER" class="heading">Linked from</h4>
+                                              <ul tal:condition="request/HTTP_REFERER">
+                                                <li tal:content="request/HTTP_REFERER|string:unknown">error</li>
+                                              </ul>
+                                              <p class="p"
+                                                tal:condition="python:user.has_role(['Manager'], object=None)">
+                                                  <a class="transport"
+                                                    href="/error_log/manage_main"
+                                                    title="see the error log"
+                                                    accesskey="m"
+                                                    i18n:attributes="title"
+                                                    i18n:translate=""
+                                                    >
+                                                    more details....
+                                                  </a>
+                                              </p>
+                                              <h4 class="heading">
+                                                More information:
+                                              </h4>
+                                              <p class="p" tal:define="myTime python:DateTime();
+                                                                       error_date python:myTime.strftime('%d/%m/%Y');
+                                                                       error_time python:myTime.TimeMinutes()">
+                                                  This error means that you have connected to the UCL Website, but the page you wanted has a problem.
+                                                  If you feel you should not be seeing this error as the address you have entered is correct please contact <a tal:attributes="href string:mailto:silva-support@ucl.ac.uk? &subject=Silva%20System%20Problem%20Encountered&body=Hi%20Silva%20Support,%0A%0AOn%20${error_date}%20at%20${error_time}%20I%20encountered%20an%20error%20whilst%20browsing%20the%20UCL%20website,%20here%20are%20the%20details:%0A%0AError%20Type:%20${error_type}%0AError%20value:%20${error_value}%0AError%20info:%0A%20Path:%20${request/PATH_INFO}%0A%20URL:%20${request/SERVER_URL}${request/PATH_INFO}${request/QUERY_STRING}%0ABrowser:%20${request/HTTP_USER_AGENT}%0A%0AAdditional%20Information:%0A%0A<please%20add%20any%20additional%20information%20you%20feel%20may%20be%20useful%20to%20Silva%20Support>" >Silva Support</a>
+                                              </p>
+                                            </div>
+                                          </div>
+                                      </tal:condition>
+                                </tal:block>
+
+                                <tal:block tal:condition="python: error_type == 'NotFound'">
+                                  <div class="info">
+                                    <h2 class="heading">Welcome to the Bartlett Faculty of the Built Environment</h2>
+                                    <p class="p">We're sorry, but the page you've requested cannot be found.  This may be due to the fact that we've
+                                    recently relaunched our website and some of the pages may have been re-named or may no longer exist.</p>
+                                    <p class="p">To find what you're looking for you might like to:</p>
+                                    <ul>
+                                        <li>Use the search box, which is located above and towards the right of this message</li>
+                                        <li>Select from one of our eight centres, top right, and use the menus to explore</li>
+                                        <li>Use our <a href="http://www.bartlett.ucl.ac.uk/programme_finder/">Programme Finder</a> to find the programme that best matches your study
+                                         or research interests</li>
+                                    </ul>
+                                    <p class="p">In the meantime here are some popular links:</p>
+                                    <ul>
+                                        <li><a href="http://www.bartlett.ucl.ac.uk/programmes/undergraduate">Undergraduate programmes from across the faculty</a></li>
+                                        <li><a href="http://www.bartlett.ucl.ac.uk/programmes/postgraduate">Postgraduate programmes from across the faculty</a></li>
+                                        <li><a href="http://www.bartlett.ucl.ac.uk/programmes/mphil-phd">MPhil/PhD programmes from across the faculty</a></li>
+                                        <li><a href="http://www.bartlett.ucl.ac.uk/research/what-we-research">Research; subjects, approaches and locations</a></li>
+                                        <li><a href="http://www.bartlett.ucl.ac.uk/latest">Latest news and events</a></li>
+                                    </ul>
+                                    <p class="p">We hope that this information has been of assistance and that you enjoy your visit to our site.</p>
+                                    
+                                  </div>
+                                </tal:block>
+
+
+
+<!-- end main slot where silva content gets rendered--> 
+
+      </section>
+
+      <section class="grid_4" id="right-content">
+
+            <aside id="programme-finder">
+
+                <h3 class="heading"><a href="http://www.bartlett.ucl.ac.uk/programme_finder" target="_self">Programme Finder</a></h3>
+                <p class="p"> Find the right programme for you by answering some questions.</p>
+                <a class="image" href="http://www.bartlett.ucl.ac.uk/programme_finder" title="Programme Finder" target="_self"><img src="http://www.bartlett.ucl.ac.uk/images/arrow.gif" width="37" height="21" alt="Programme Finder" class="default" title="Programme Finder"></a>
+
+            </aside>
+
+            <aside id="social-bookmarks-container">
+                <ul id="social_bookmarks">
+                    <li>
+                        <a href="#">
+                            <img alt="Social Bookmarks" src="http://www.bartlett.ucl.ac.uk/++resource++img/social_bookmarks_share_open.gif">
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="http://www.facebook.com/sharer.php?u=http://www.bartlett.ucl.ac.uk&amp;t=The Bartlett" target="_blank" rel="nofollow" title="Share on Facebook">
+                                    <img alt="Facebook" src="http://www.bartlett.ucl.ac.uk/++resource++img/social_bookmarks_facebook.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com/home/?status=The Bartlett - http://www.bartlett.ucl.ac.uk" target="_blank" rel="nofollow" title="Tweet this page">
+                                    <img alt="Twitter" src="http://www.bartlett.ucl.ac.uk/++resource++img/social_bookmarks_twitter.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://delicious.com/save?url=http://www.bartlett.ucl.ac.uk&amp;title=The Bartlett" target="_blank" rel="nofollow" title="Bookmark on delicious">
+                                    <img alt="Delicious" src="http://www.bartlett.ucl.ac.uk/++resource++img/social_bookmarks_delicious.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://reddit.com/submit?url=http://www.bartlett.ucl.ac.uk&amp;title=The Bartlett" target="_blank" rel="nofollow" title="Share on Reddit">
+                                    <img alt="Reddit" src="http://www.bartlett.ucl.ac.uk/++resource++img/social_bookmarks_reddit.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://digg.com/submit?url=http://www.bartlett.ucl.ac.uk&amp;title=The Bartlett" target="_blank" rel="nofollow" title="Submit to Digg">
+                                    <img alt="Digg" src="http://www.bartlett.ucl.ac.uk/++resource++img/social_bookmarks_digg.gif">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.stumbleupon.com/submit?url=http://www.bartlett.ucl.ac.uk&amp;title=The Bartlett" target="_blank" rel="nofollow" title="Submit to Stumbleupon">
+                                    <img alt="Stumbleupon" src="http://www.bartlett.ucl.ac.uk/++resource++img/social_bookmarks_stumbleupon.gif">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a target="_blank" title="Email this page" href="mailto:?Subject=Hey, I'm emailing a page!&amp;Body=http://www.bartlett.ucl.ac.uk">
+                            <img alt="Email this page" src="http://www.bartlett.ucl.ac.uk/++resource++img/social_bookmarks_email.gif">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:window.print()" title="Print this page">
+                            <img alt="Print this page" src="http://www.bartlett.ucl.ac.uk/++resource++img/social_bookmarks_print.gif">
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+      </section>
+
+      <div class="clearfix"></div>
+</div>
+
+
+          <section class="grid_16" id="breadcrumb-content">
+      <!--tal:breadcrumbs content="structure context/@@breadcrumbs" /-->
+      <ul>
+        
+          
+        
+        
+          <li>
+            <a href="http://www.bartlett.ucl.ac.uk">The Bartlett</a>
+             / 
+          </li>
+
+        
+        
+          <li>
+            <a href="http://www.bartlett.ucl.ac.uk">Error Message</a>
+            
+          </li>
+        
+      </ul>
+  </section>
+  <div class="clearfix"></div>
+
+    </div>
+    
+
+<footer id="footer-content">
+        <div class="container_16">
+            <div class="grid_16">
+                <section class="grid_4 alpha">
+                    <ul>
+                      <li><a href="http://www.ucl.ac.uk/disclaimer/">Disclaimer</a></li>
+                      <li><a href="http://www.ucl.ac.uk/accessibility/">Accessibility</a></li>
+                      <li><a href="http://www.ucl.ac.uk/foi/">Freedom of information</a></li>
+                      <li><a href="http://www.ucl.ac.uk/privacy/">Privacy</a></li>
+                      <li><a href="http://www.ucl.ac.uk/cookies">Cookies</a></li>
+                      <li><a href="http://www.ucl.ac.uk/help/">Help</a></li>
+                      <li><a href="http://www.bartlett.ucl.ac.uk/about-us/contacts">Contact us</a></li>
+                      <li id="mobileview"><a id="displayMob" href="" class="viewOrig">Back to mobile view</a></li>
+                      <li id="desktopview"><a id="displayDesk" href="" class="viewOrig">Turn off mobile view</a></li>
+                    </ul>
+                </section>
+
+                <section class="grid_8">
+                    <p>
+                        <span class="vcard">
+                            <address>
+                                <span class="adr">Bartlett Faculty of the Built Environment<br /> UCL<br /> Gower Street<br /> London<br /> WC1E 6BT<br /></span>
+                                <br />
+                                <span class="tel">
+                                    <span class="type">T</span><span
+    class="value">+44 (0)20 7679 2000</span>
+                                </span>
+                            </address>
+                        </span>
+                    </p>
+                </section>
+
+                <section class="grid_4 omega">
+                    <ul class="footer-social-links">
+                        <li class="facebook_link"><a
+    target="_blank" rel="me"
+    href="http://www.facebook.com/BartlettUCLofficial">Find us on Facebook</a></li>
+                        <li class="twitter_link"><a
+    target="_blank" rel="me"
+    href="http://twitter.com/BartlettUCL">Find us on Twitter</a></li>
+                    </ul>
+                    <p class="copyright">Copyright &copy; 1999 - 2013 UCL  </p>
+                </section>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+      </footer>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+  <script>window.jQuery || document.write('<script src="http://www.bartlett.ucl.ac.uk/++resource++jslibs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="http://www.bartlett.ucl.ac.uk/++resource++js/plugins.js"></script>
+  <script src="http://www.bartlett.ucl.ac.uk/++resource++js/script.js"></script>
+  
+  
+
+  <!-- end scripts-->
+    <script>
+        var _gaq=[["_setAccount","UA-943297-1"],["_trackPageview"],["_trackPageLoadTime"],["t2._setAccount","UA-25532985-1"],["t2._trackPageview"],["t2._trackPageLoadTime"]];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+        s.parentNode.insertBefore(g,s)}(document,"script"));
+    </script>
+</body>
+</tal:block>
+</html>

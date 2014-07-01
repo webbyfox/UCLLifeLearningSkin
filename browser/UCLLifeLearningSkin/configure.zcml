@@ -1,0 +1,169 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:five="http://namespaces.zope.org/five"
+>
+
+<browser:page
+   name="index.html"
+   for="Products.Silva.interfaces.IContent"
+   class=".UCLLifeLearning.UCLContent"
+   permission="zope2.View"
+   template="ucl_render.pt"
+   layer=".skin.IUCLLifeLearningSkin"
+/>
+
+<browser:page
+   name="index.html"
+   for="Products.Silva.interfaces.IContainer"
+   class=".UCLLifeLearning.UCLContainer"
+   permission="zope2.View"
+   template="ucl_render.pt"
+   layer=".skin.IUCLLifeLearningSkin"
+/>
+
+ <browser:page
+   name="preview_html"
+   for="Products.Silva.interfaces.IContent"
+   class=".UCLLifeLearning.UCLContentPreview"
+   permission="silva.ChangeSilvaContent"
+   layer=".skin.IUCLLifeLearningSkin"
+ />
+
+ <browser:page
+   name="preview_html"
+   for="Products.Silva.interfaces.IContainer"
+   class=".UCLLifeLearning.UCLContainerPreview"
+   permission="silva.ChangeSilvaContent"
+   layer=".skin.IUCLLifeLearningSkin"
+ />
+
+ <browser:page
+   name="ucl_meta"
+   for="Products.Silva.interfaces.ISilvaObject"
+   class=".UCLLifeLearning.UCLLifeLearning"
+   template="ucl_meta.pt"
+   permission="zope2.View"
+   layer=".skin.IUCLLifeLearningSkin"
+/>
+
+<browser:page
+   name="ucl_news_meta"
+   for="Products.SilvaNews.interfaces.INewsItem"
+   class=".UCLLifeLearning.UCLLifeLearning"
+   template="ucl_news_meta.pt"
+   permission="zope2.View"
+   layer=".skin.IUCLLifeLearningSkin"
+/>
+
+ <browser:page
+   name="ucl_analytics"
+   for="Products.Silva.interfaces.ISilvaObject"
+   class=".UCLLifeLearning.UCLLifeLearning"
+   template="ucl_analytics.pt"
+   permission="zope2.View"
+   layer=".skin.IUCLLifeLearningSkin"
+/>
+
+
+<browser:page
+  name="ucl_header"
+  for="Products.Silva.interfaces.ISilvaObject"
+  class=".UCLLifeLearning.UCLLifeLearning"
+  template="ucl_header.pt"
+  permission="zope2.View"
+  layer=".skin.IUCLLifeLearningSkin"
+/>
+
+<browser:page
+  name="ucl_navigation"
+  for="Products.Silva.interfaces.ISilvaObject"
+  class=".UCLLifeLearning.UCLLifeLearning"
+  template="ucl_navigation.pt"
+  permission="zope2.View"
+  layer=".skin.IUCLLifeLearningSkin"
+/>
+
+<browser:page
+  name="ucl_content"
+  for="Products.Silva.interfaces.ISilvaObject"
+  class=".UCLLifeLearning.UCLLifeLearning"
+  template="ucl_content.pt"
+  permission="zope2.View"
+  layer=".skin.IUCLLifeLearningSkin"
+/>
+
+<browser:page
+  name="ucl_social"
+  for="Products.Silva.interfaces.ISilvaObject"
+  class=".UCLLifeLearning.UCLLifeLearning"
+  template="ucl_social.pt"
+  permission="zope2.View"
+  layer=".skin.IUCLLifeLearningSkin"
+/>
+
+<browser:page
+  name="ucl_footer"
+  for="Products.Silva.interfaces.ISilvaObject"
+  class=".UCLLifeLearning.UCLLifeLearning"
+  template="ucl_footer.pt"
+  permission="zope2.View"
+  layer=".skin.IUCLLifeLearningSkin"
+/>
+
+ <browser:resourceDirectory
+   name="img"
+   directory="static/img"
+   permission="zope.Public"
+   layer=".skin.IUCLLifeLearningSkin"
+ />
+
+ <browser:resourceDirectory
+   name="images"
+   directory="static/images"
+   permission="zope.Public"
+   layer=".skin.IUCLLifeLearningSkin"
+ />
+
+<browser:resourceDirectory
+   name="css"
+   directory="static/css"
+   permission="zope.Public"
+   layer=".skin.IUCLLifeLearningSkin"
+/>
+
+<browser:resourceDirectory
+   name="js"
+   directory="static/js"
+   permission="zope.Public"
+   layer=".skin.IUCLLifeLearningSkin"
+/>
+
+<browser:resourceDirectory
+   name="jslibs"
+   directory="static/js/libs"
+   permission="zope.Public"
+   layer=".skin.IUCLLifeLearningSkin"
+/>
+
+<browser:resourceDirectory
+   name="jsmylibs"
+   directory="static/js/mylibs"
+   permission="zope.Public"
+   layer=".skin.IUCLLifeLearningSkin"
+/> 
+
+<browser:resourceDirectory
+   name="js/themes/light"
+   directory="static/js/themes/light"
+   permission="zope.Public"
+   layer=".skin.IUCLLifeLearningSkin"
+/>
+
+ <interface
+   interface=".skin.IUCLLifeLearningSkin"
+   type="zope.publisher.interfaces.browser.IBrowserSkinType"
+   name="UCL Life Learning Theme"
+ />
+
+</configure>
