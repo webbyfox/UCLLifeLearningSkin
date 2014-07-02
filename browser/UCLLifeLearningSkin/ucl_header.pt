@@ -1,7 +1,7 @@
-<tal:block define="resourcebase request/resourcebase/absolute_url; 
+<tal:block define="resourcebase request/resourcebase/absolute_url|nothing; 
                     navshow python:view.metadata_collector('topnav');">
     <header>
-        <h1 tal:condition="view/getPublicationTitle" tal:content="view/getPublicationTitle">Petrie</h1>
+        <h1 tal:condition="view/getPublicationTitle" tal:content="view/getPublicationTitle">Life Learning</h1>
         <tal:navigation replace="structure context/@@ucl_navigation" />
     </header> 
 </tal:block>

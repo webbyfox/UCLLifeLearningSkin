@@ -2,7 +2,7 @@
 <!--[if IE 7]> <html lang="en" dir="ltr" class="lt-ie9 lt-ie8 no-js" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Organization"> <![endif]-->
 <!--[if IE 8]> <html lang="en" dir="ltr" class="lt-ie9 no-js" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Organization"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" dir="ltr" class="no-js" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Organization"> <!--<![endif]-->
-<head tal:define="global resourcebase request/resourcebase/absolute_url;
+<head tal:define="global resourcebase request/resourcebase/absolute_url|nothing;
                   global ucl_content_area context/@@ucl_content;
                   head_content python:'\n'.join(request.other.setdefault('head', []));
                   global foot_js_script python:'\n'.join(request.other.setdefault('script_foot', []));

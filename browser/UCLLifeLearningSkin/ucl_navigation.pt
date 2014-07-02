@@ -1,7 +1,7 @@
 <nav
-        tal:define="myroot view/getPublicationRoot;
-                    curl context/absolute_url;
-                    rooturl myroot/absolute_url">
+        tal:define="myroot view/getPublicationRoot|nothing;
+                    curl context/absolute_url|nothing;
+                    rooturl myroot/absolute_url|nothing">
     <tal:outer condition="myroot">
         <a href="#"
                 tal:attributes="href rooturl;
