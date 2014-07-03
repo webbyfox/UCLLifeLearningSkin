@@ -1,108 +1,40 @@
-/* line 1, ../../css/fontello-ie7.scss */
-
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   font-family: 'fontello';
   font-style: normal;
   font-weight: normal;
+ 
   /* fix buttons height */
-  line-height: 1.5;
+  line-height: 1em;
+ 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
 }
-
-/* line 13, ../../css/fontello-ie7.scss */
-
-.icon-user {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;');
-}
-
-/* line 14, ../../css/fontello-ie7.scss */
-
-.icon-twitter-1 {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe807;&nbsp;');
-}
-
-/* line 15, ../../css/fontello-ie7.scss */
-
-.icon-male {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80a;&nbsp;');
-}
-
-/* line 16, ../../css/fontello-ie7.scss */
-
-.icon-th {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;');
-}
-
-/* line 17, ../../css/fontello-ie7.scss */
-
-.icon-tag {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80b;&nbsp;');
-}
-
-/* line 18, ../../css/fontello-ie7.scss */
-
-.icon-chat {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe808;&nbsp;');
-}
-
-/* line 19, ../../css/fontello-ie7.scss */
-
-.icon-calendar {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe809;&nbsp;');
-}
-
-/* line 20, ../../css/fontello-ie7.scss */
-
-.icon-clock {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80c;&nbsp;');
-}
-
-/* line 21, ../../css/fontello-ie7.scss */
-
-.icon-users {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;');
-}
-
-/* line 22, ../../css/fontello-ie7.scss */
-
-.icon-signal {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80e;&nbsp;');
-}
-
-/* line 23, ../../css/fontello-ie7.scss */
-
-.icon-briefcase {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80d;&nbsp;');
-}
-
-/* line 24, ../../css/fontello-ie7.scss */
-
-.icon-book {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80f;&nbsp;');
-}
-
-/* line 25, ../../css/fontello-ie7.scss */
-
-.icon-pound {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;');
-}
-
-/* line 26, ../../css/fontello-ie7.scss */
-
-.icon-facebook {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe810;&nbsp;');
-}
-
-/* line 27, ../../css/fontello-ie7.scss */
-
-.icon-linkedin-1 {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe806;&nbsp;');
-}
-
-/* line 28, ../../css/fontello-ie7.scss */
-
-.icon-angle-right {
-  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;');
-}
+ 
+.icon-business { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
+.icon-executive-education { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.icon-blended { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe807;&nbsp;'); }
+.icon-summer-school { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe808;&nbsp;'); }
+.icon-duration { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe809;&nbsp;'); }
+.icon-cost { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80a;&nbsp;'); }
+.icon-personal-development { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80b;&nbsp;'); }
+.icon-medical { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80c;&nbsp;'); }
+.icon-built-environment { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80d;&nbsp;'); }
+.icon-location { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80e;&nbsp;'); }
+.icon-law { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80f;&nbsp;'); }
+.icon-social-historical { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe810;&nbsp;'); }
+.icon-maths-physics { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe811;&nbsp;'); }
+.icon-online { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe812;&nbsp;'); }
+.icon-education { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe806;&nbsp;'); }
+.icon-languages { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe814;&nbsp;'); }
+.icon-self-paced { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe815;&nbsp;'); }
+.icon-hours { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe816;&nbsp;'); }
+.icon-face-to-face { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe817;&nbsp;'); }
+.icon-professional-development { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe818;&nbsp;'); }
+.icon-engineering { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe819;&nbsp;'); }
+.icon-facebook { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81a;&nbsp;'); }
+.icon-linkedin { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
+.icon-twitter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81b;&nbsp;'); }
+.icon-mail { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-user { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;'); }
+.icon-phone { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe805;&nbsp;'); }
+.icon-art { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe813;&nbsp;'); }

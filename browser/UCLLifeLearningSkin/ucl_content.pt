@@ -1,4 +1,5 @@
 <!-- Start Silva content --> 
-<tal:contentarea tal:replace="structure view/render" />
+
+	<tal:contentarea tal:replace="structure view/render" />
 
 <!-- End Silva content --> 

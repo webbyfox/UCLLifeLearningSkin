@@ -1,50 +1,115 @@
-<!doctype html>
-<!--[if IE 7]> <html lang="en" dir="ltr" class="lt-ie9 lt-ie8 no-js" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Organization"> <![endif]-->
-<!--[if IE 8]> <html lang="en" dir="ltr" class="lt-ie9 no-js" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Organization"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" dir="ltr" class="no-js" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Organization"> <!--<![endif]-->
+<!DOCTYPE html>
+
+<html class="no-js">
+
 <head tal:define="global resourcebase request/resourcebase/absolute_url|nothing;
-                  global ucl_content_area context/@@ucl_content;
-                  head_content python:'\n'.join(request.other.setdefault('head', []));
-                  global foot_js_script python:'\n'.join(request.other.setdefault('script_foot', []));
-                  setskin view/setSkin;">
-  <link rel="canonical" tal:attributes="href view/canonical_path" />
-  <tal:block content="structure context/@@ucl_meta" />
-  <title tal:content="context/get_title_or_id">Title</title>
-  <!--<tal:comment replace="nothing">
-  <link rel="stylesheet" href="http://static.ucl.ac.uk/petrie/css/petrie.css">
-  <link rel="stylesheet" href="//www.ucl.ac.uk/3dpetriemuseum/3dobjects/models/css/petrie.css"
-        tal:attributes="href string:${resourcebase}/++resource++css/petrie.css">
-  </tal:comment>-->
-  <link rel="stylesheet" href="//www.ucl.ac.uk/3dpetriemuseum/3dobjects/models/css/petrie.css">
-  <link rel="shortcut icon" tal:attributes="href string:${resourcebase}/++resource++img/favicon.ico">
-  <link rel="apple-touch-icon-precomposed" tal:attributes="href string:${resourcebase}/++resource++img/apple-touch-icon-precomposed.png">
-  <meta name="msapplication-TileColor" content="#000000">
-  <meta name="msapplication-TileImage" tal:attributes="content string:${resourcebase}/++resource++img/ucladvances-144.png">
+                    global ucl_content_area context/@@ucl_content;
+                    head_content python:'\n'.join(request.other.setdefault('head', []));
+                    global foot_js_script python:'\n'.join(request.other.setdefault('script_foot', []));
+                    setskin view/setSkin;
+                    global myroot view/getPublicationRoot|nothing;
+                    global curl context/absolute_url|nothing;
+                    global rooturl myroot/absolute_url|nothing">
+
+    <link rel="canonical" tal:attributes="href view/canonical_path" />
+    <title tal:content="context/get_title_or_id">Title</title>
+    <tal:block content="structure context/@@ucl_meta" />
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0" />
+    
+
+
+  <!--[if (!IE) | (gt IE 8)]><!-->
+  <link rel="stylesheet" href="/++resource++css/screen.css" media="screen, projection"/>
+  <!--<![endif]-->
+
   <!--[if IE]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="/++resource++css/ie.css"/>
   <![endif]-->
-  <!-- Head injector Script -->
-  <tal:analytics content="structure context/@@ucl_analytics" />
-</head>
-<body id="index">
+  <!--[if (lt IE 9) & (!IEMobile)]>
+  <link rel="stylesheet" href="/++resource++css/ie-old.css"/>
+  <![endif]-->
+  <!--[if lt IE 8]>
+  <link rel="stylesheet" href="/++resource++css/fontello-ie7.css">
+  <![endif]-->
 
-  <div id="container">
-      <div id="site-content">
-    
-        <tal:header replace="structure context/@@ucl_header" />
-    
-        <div id="content" class="master-background wrapper clearfix">
-          <section id="main" role="main" class="dl-all">
-            <tal:content content="structure ucl_content_area"/>
-          </section>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Head injector Script -->
+    <tal:analytics content="structure context/@@ucl_analytics" />
+
+    <link rel="shortcut icon" href="/++resource++images/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="/++resource++images/favicon-152.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/++resource++images/favicon-144.png">
+
+  </head>
+
+  <body >
+
+      <tal:header replace="structure context/@@ucl_header" />
+      
+      <div id="site-content" class="wrapper">
+
+    <header id="header-mobile">
+        <a id="nav-mobile-menu" href="#"><img src="/++resource++images/mob-nav.png" alt="Menu" /></a>      
+    </header>       
+
+    <nav class="subbrand__mobile-nav" role="navigation">
+            <a href="#menu" class="menu-link">Menu</a>
+            <ul id="menu">
+                <li><a href="/about-us">About us</a></li>
+                <li><a href="/case-studies">Case studies</a></li>
+                <li><a href="#">Commercial partners</a></li>
+                <li><a href="/all-subjects">View A-Z of courses</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">UCL staff</a></li>
+            </ul>
+    </nav>
+
+
+    <div class="home__hero text--invert home__hero--height-1" tal:condition="python:curl == rooturl">
+            <div class="home__hero__cover">
+
+                <div class="home__hero__container">
+
+                    <div class="home__hero__intro">
+                        <a href="/" class="subbrand__logo subbrand__logo--home">
+                            <span>UCL Life Learning</span>
+                        </a>
+                        <h2 class="home__hero__strapline">
+                            UCL's home for <strong>cutting edge short courses</strong> offering career advancement and personal growth,
+                            find what you need to continue your learning.
+                        </h2>
+                    </div>
+                   
+                </div>
+
+            </div>
         </div>
-      </div>
-    
-      <footer>
-          <tal:footer content="structure context/@@ucl_footer" />
-          <tal:social content="structure context/@@ucl_social" />
-      </footer>
-    </div>
-</body>
-</html>
+        
+     
 
+        <div class="subbrand"  
+                    tal:condition="python:curl != rooturl">
+
+            <a href="/" class="subbrand__logo subbrand__logo--page">
+                <span>UCL Life Learning</span>
+            </a>
+               
+        </div> <!-- end .subbrand -->
+
+ <div id="main" class="clearfix">
+      <tal:content content="structure ucl_content_area"/>
+</div>
+</div>
+      <tal:footer content="structure context/@@ucl_footer" />
+
+
+
+  </body>
+
+</html>

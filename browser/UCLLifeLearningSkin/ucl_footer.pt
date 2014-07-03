@@ -1,12 +1,60 @@
+
 <tal:footer define="resourcebase request/resourcebase/absolute_url;">
-    <p id="copyright">Copyright &copy; <span tal:replace="view/copyrightyear" /> UCL </p>
-    <p id="links">
-    <a href="http://www.ucl.ac.uk/disclaimer">Disclaimer</a>
-    <a href="http://www.ucl.ac.uk/foi">Freedom of Information</a>
-    <a href="http://www.ucl.ac.uk/accessibility">Accessibility</a>
-    <a href="http://www.ucl.ac.uk/privacy">Privacy</a>
-    <a href="http://www.ucl.ac.uk/cookies">Cookies</a>
-    <a href="http://www.ucl.ac.uk/contact-list">Contact UCL</a>
-    <a tal:attributes="href string:${context/absolute_url}/edit"><img height="10" width="10" alt="Edit Icon" title="Edit Content" tal:attributes="src string:${resourcebase}/++resource++img/edit.gif" id="edit_button"></a>
-	</p>
+
+     <footer class="wrapper clearfix">
+
+        <article class="block-myucl">
+            <h2 class="footer__heading">Facilities</h2>
+            <ul class="footer__list">
+                <li><a href="http://www.ucl.ac.uk/departments/faculties">Faculties and departments</a></li>
+                <li><a href="http://www.ucl.ac.uk/library/">Library</a></li>
+                <li><a href="http://www.ucl.ac.uk/museums">Museums and Collections</a></li>
+                <li><a href="http://www.thebloomsbury.com/">UCL Bloomsbury Theatre</a></li>
+                <li><a href="http://www.ucl.ac.uk/maps">Maps and buildings</a></li>
+            </ul>
+        </article>
+        
+        <article class="block-finditfast1">
+            <h2 class="footer__heading">Locations</h2>
+            <ul class="footer__list">
+                <li><a href="http://www.ucl.ac.uk/london">UCL and London</a></li>
+                <li><a href="http://www.ucl.ac.uk/australia#">UCL Australia</a></li>
+                <li><a href="http://www.ucl.ac.uk/qatar">UCL Qatar</a></li>
+            </ul>
+        </article>
+        
+        <article class="block-finditfast2">
+            <h2 class="footer__heading">Connect with us</h2>
+            <a href="/" class="block-finditfast2__logo">
+                <span>UCL Life Learning</span>
+            </a>
+            <ul class="block-finditfast2__share nav nav--reduced-gapped nav--pull-left">
+                <li>
+                    <a href="http://www.facebook.com/UCLAdvances" class="icon--alone" rel="nofollow" target="_blank">
+                        <span aria-hidden="true" class="icon icon--square icon-facebook"></span>
+                        <span class="is-hidden">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/ucladvances" class="icon--alone" rel="nofollow" target="_blank">
+                        <span aria-hidden="true" class="icon icon--square icon-twitter"></span>
+                        <span class="is-hidden">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/groups/UCL-Advances-3128353" class="icon--alone" rel="nofollow" target="_blank">
+                        <span aria-hidden="true" class="icon icon--square icon-linkedin"></span>
+                        <span class="is-hidden">LinkedIn</span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <hr>
+        
+        <p>University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</p>
+        
+        <p id="footer-links">Copyright &copy; 2014 UCL <a href="#">Disclaimer</a> | <a href="#">Freedom of Information</a> | <a href="#">Accessibility</a> | <a href="#">Privacy</a> | <a href="#">Cookies</a> | <a href="#">Contact Us</a></p>
+
+</footer>
 </tal:footer>

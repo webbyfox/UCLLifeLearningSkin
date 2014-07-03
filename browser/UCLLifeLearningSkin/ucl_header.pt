@@ -1,7 +1,82 @@
 <tal:block define="resourcebase request/resourcebase/absolute_url|nothing; 
-                    navshow python:view.metadata_collector('topnav');">
-    <header>
-        <h1 tal:condition="view/getPublicationTitle" tal:content="view/getPublicationTitle">Life Learning</h1>
-        <tal:navigation replace="structure context/@@ucl_navigation" />
-    </header> 
-</tal:block>
+                    navshow python:view.metadata_collector('topnav');
+                    myroot view/getPublicationRoot|nothing;
+                    curl context/absolute_url|nothing;
+                    rooturl myroot/absolute_url|nothing">
+
+<div id="nav-wrap">
+
+        <a id="nav-mobile-back" href="#"><img src="/++resource++images/close.png" alt="X" /> Close</a>
+
+            <nav id="global-masthead">
+    
+        <div class="wrapper clearfix">
+        
+            <div id="global-search">
+
+                <form action="#" method="get">  
+                    <!--
+                    <div class="search-type">               
+                        <input type="radio" id="ucl-site" name="operation" value="1" checked="checked">
+                        <label for="ucl-site" class="site">Site</label>
+                        <input type="radio" id="ucl-search" name="operation" value="2">
+                        <label for="ucl-search" class="staff">Directory</label>
+                    </div>
+                    -->
+                <div id="searchform">
+                    <input type="search" placeholder="Search website" id="search" value="">
+                    </div>
+                    
+                    <input type="submit" name="sumbit" value="Go" class="btn search" />
+                </form>
+                
+                
+            </div>
+            
+            <ul id="audiences" class="m-clear">
+                <li><a href="/">UCL Home</a></li>               
+                <li><a href="prospective-students.php">Prospective students</a></li>
+                <li><a href="current-students.php">Current students</a></li>
+                <li><a href="staff.php">Staff</a></li>      
+            </ul>
+        </div>
+        
+  </nav><!-- end #global-masthead -->
+
+
+ <div class="wrapper">
+            <div class="photograph">
+                
+                <header id="ucl-masthead" role="header">
+                    
+                    <div id="branding">
+                        <h1>UCL Life Learning</h1>
+                        <img src="/++resource++images/ucl-logo.svg" alt="UCL logo" id="logo">
+                    </div>
+                    
+                </header> 
+                
+                <div class="site-brand">
+
+                    <p class="photograph-description"></p>
+                    <ul class="subbrand__nav nav nav--divided" role="navigation">
+                        <li><a href="/about-us">About us</a></li>
+                        <li><a href="/case-studies">Case studies</a></li>
+                        <li><a href="#">Commercial partners</a></li>
+                        <li><a href="/all-subjects">View A-Z of courses</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">UCL staff</a></li>
+                    </ul>
+ 
+                </div> 
+                
+            </div><!-- end .photograph -->
+
+        </div> <!-- end .wrapper -->
+
+
+    </div><!-- end #nav-wrap -->
+
+  
+      
+</tal:block >

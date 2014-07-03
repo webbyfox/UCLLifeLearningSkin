@@ -111,12 +111,6 @@
   layer=".skin.IUCLLifeLearningSkin"
 />
 
- <browser:resourceDirectory
-   name="img"
-   directory="static/img"
-   permission="zope.Public"
-   layer=".skin.IUCLLifeLearningSkin"
- />
 
  <browser:resourceDirectory
    name="images"
@@ -135,6 +129,14 @@
 <browser:resourceDirectory
    name="js"
    directory="static/js"
+   permission="zope.Public"
+   layer=".skin.IUCLLifeLearningSkin"
+/>
+
+
+<browser:resourceDirectory
+   name="fonts"
+   directory="static/fonts"
    permission="zope.Public"
    layer=".skin.IUCLLifeLearningSkin"
 />
