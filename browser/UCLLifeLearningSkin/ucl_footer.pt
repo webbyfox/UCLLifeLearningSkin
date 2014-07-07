@@ -1,4 +1,3 @@
-
 <tal:footer define="resourcebase request/resourcebase/absolute_url;">
 
      <footer class="wrapper clearfix">
