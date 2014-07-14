@@ -108,7 +108,10 @@
 </div>
       <tal:footer content="structure context/@@ucl_footer" />
 
-
+<script src="/++resource++js/jquery.js"></script>
+<script src="/++resource++js/pikaday.js"></script>
+<script src="/++resource++js/ucl.js"></script>
+<script src="/++resource++js/ucllifelearning.js"></script>
 
   </body>
 
