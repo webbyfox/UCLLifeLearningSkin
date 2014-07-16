@@ -167,7 +167,7 @@
  <interface
    interface=".skin.IUCLLifeLearningSkin"
    type="zope.publisher.interfaces.browser.IBrowserSkinType"
-   name="UCL Life Learning Theme"
+   name="LifeLearningSkin"
  />
 
 </configure>
